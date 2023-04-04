@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Mestrado\SmartIO
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Mestrado/SmartIO/SmartIO/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = U21hcnRJT1xWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
+[C:/Mestrado/SmartIO/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Mestrado/SmartIO/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Mestrado/SmartIO/Views/Home/IndexUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleFVzdWFyaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Mestrado/SmartIO/Views/Shared/Error.cshtml]
