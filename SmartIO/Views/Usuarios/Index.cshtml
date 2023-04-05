@@ -1,59 +1,47 @@
-﻿@model IEnumerable<SmartIO.Models.Usuario>
-
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "SMART.IO";
 }
+<div class="flex-container">
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.login)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cep)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdFormulario)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.login)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cep)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdFormulario)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="flex-container">
+        <div class="content-info">
+            <p>
+                <h1 class="texto-smartio">
+                    SMART.IO
+                </h1>
+            </p>
+            <p>
+                <h2>
+                    Somos focados em smart cities e sustentabilidade buscando melhoria nas cidade
+                    para transforma-las em cidades inteligentes.
+                </h2>
+            </p>
+        </div>
+    </div>
+    <main class="form-signin w-100 m-auto">
+        <div data-reactroot class="index-page">
+            <h1 class="h3 mb-3 fw-normal"><b>Entrar</b></h1>
+            <div class="card ">
+                <form>
+                    <div>
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Digite seu email">
+                    </div>
+                    <br />
+                    <div>
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="senha">
+                    </div>
+                    <hr />
+                    <div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Continuar</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+</div>
+

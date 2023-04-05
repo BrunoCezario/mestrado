@@ -3,45 +3,66 @@
 }
 
 
-<div class="flex-container">
+<h1 class="texto-smartio" style="text-align:center;"> SMART.IO</h1>
 
-    <div class="flex-container">
-        <div class="content-info">
-            <p>
-                <h1 class="texto-smartio">
-                    SMART.IO
-                </h1>
-            </p>
-            <p>
-                <h2>
-                    Somos focados em smart cities e sustentabilidade buscando melhoria nas cidade
-                    para transforma-las em cidades inteligentes.
-                </h2>
-            </p>
+<h3 style="text-align:center;">
+    Somos focados em smart cities e sustentabilidade buscando melhoria nas cidade
+    para transforma-las em cidades inteligentes.
+</h3>
+
+<div class="flex-container-drives">
+    <div class="card">
+        <div class="card-header">
+            <h2>Preencha os dados abaixo para a nossa pesquisa</h2>
         </div>
-    </div>
-    <main class="form-signin w-100 m-auto">
-        <div data-reactroot class="index-page">
-            <h1 class="h3 mb-3 fw-normal"><b>Entrar</b></h1>
-            <div class="card ">
-                <form>
-                    <div>
-                        <input type="text" class="form-control" id="cep" onkeypress="formatarCep()" placeholder="Digite seu CEP">
-                    </div>
-                    <hr />
-                    <div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Continuar</button>
-                    </div>
-                </form>
+        <div class="card-body">
+            <h5 class="card-title">Digite seu CEP</h5>
+            <div>
+                <input type="text" class="form-control" style="width:300px" id="cep" onclick="formatarCep()" placeholder="Digite seu cep">
+            </div>
+            <hr />
+            <h2>Escolha entre esses itens  abaixo que você como cidadão acha mais prioritário para sua cidade.</h2>
+            <br />
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">SUSTENTABILIDADE</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">SEGURANÇA</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">SAÚDE</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">MOBILIDADE</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">ENERGIA INTELIGENTE</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">PLANEJAMENTO URBANO</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                <label class="form-check-label" for="flexSwitchCheckChecked">INOVAÇÃO</label>
+            </div>
+            <br />
+            <div>
+                <button class="btn btn-lg btn-primary" sstyle="width: 50% !important;" type="submit">ENVIAR</button>
             </div>
 
         </div>
-    </main>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
-
+    </div>
 </div>
+
+
+
+
 
 
 

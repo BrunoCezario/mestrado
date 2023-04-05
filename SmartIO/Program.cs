@@ -2,8 +2,10 @@
 using Microsoft.Extensions.DependencyInjection;
 using SmartIO.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<SmartIOContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SmartIOContext") ?? throw new InvalidOperationException("Connection string 'SmartIOContext' not found.")));
+builder.Services.AddDbContext<SmartIOContext>(options => options.UseInMemoryDatabase("teste"));
+
+//builder.Services.AddDbContext<SmartIOContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("SmartIOContext") ?? throw new InvalidOperationException("Connection string 'SmartIOContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

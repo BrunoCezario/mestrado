@@ -19,14 +19,7 @@ namespace SmartIO.Controllers
             _context = context;
         }
 
-        // GET: Usuarios
-        public async Task<IActionResult> Index()
-        {
-              return _context.Usuario != null ? 
-                          View(await _context.Usuario.ToListAsync()) :
-                          Problem("Entity set 'SmartIOContext.Usuario'  is null.");
-        }
-
+               
         // GET: Usuarios/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -46,9 +39,9 @@ namespace SmartIO.Controllers
         }
 
         // GET: Usuarios/Create
-        public IActionResult Create()
+        public IActionResult Index()
         {
-            return View();
+            return View(nameof(Index));
         }
 
         // POST: Usuarios/Create
